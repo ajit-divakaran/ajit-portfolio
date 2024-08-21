@@ -1,0 +1,135 @@
+.navBar {
+  min-height: 10vh; /*70.7px*/
+  width: 100%;
+  /* display:grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  /* grid-row:1/2; */
+}
+.nav-menu {
+  margin-right: 140px;
+  display: flex;
+}
+.nav-menu > a {
+  margin: 0 25px 0 25px;
+  text-decoration: none;
+  font-family: "Karla";
+  font-weight: 400;
+  font-size: 18px;
+  position: relative;
+  color: bisque;
+}
+
+.nav-menu > a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: cadetblue;
+  filter: drop-shadow(0px 1px 13px);
+  transform-origin: bottom left;
+  transition: transform 0.18s ease-out;
+}
+
+.nav-menu > a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logo-link {
+  /* height:70.7px; */
+  width: 200px;
+  margin: 15px 50px 0 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  border-radius: 3px;
+  color: beige;
+  font-family: var(--font-logo);
+  font-weight: 600;
+  position: relative;
+  /* text-decoration: underline;
+    text-underline-position: right under; */
+}
+.logo_underline {
+  font-family: var(--font-logo);
+  font-weight: 600;
+  height: 100%;
+  color: beige;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  /* width:38px; */
+}
+
+/* .logo_underline::after{
+    content: "";
+    display: block;
+    position:relative;
+    width: inherit;
+    height: 5px;
+    
+    background-color: beige;
+  } */
+
+/* .logo::before{
+    content:'';
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    height:100%;
+    width:100%;
+    background-size: cover;
+    background-image: url(../../../public/images/underline.png);
+    background-color: beige;
+    transform:scaleX(0.2);
+    z-index:1;
+  } */
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 2px auto;
+  }
+  .nav-menu {
+    margin-right: 0;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    & a {
+      font-size: 4vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px rgba(245, 222, 179, 0.18) solid;
+      border-right: 0;
+      border-left: 0;
+      background-color: transparent;
+      transition: background-color 0.75s ease-out;
+    }
+  }
+
+  .nav-menu > a:hover {
+    background-color: rgba(95, 158, 160, 0.537);
+  }
+
+  .logo-link {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+  }
+  .logo {
+    height: 75%;
+  }
+}
