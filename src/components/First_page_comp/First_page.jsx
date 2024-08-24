@@ -1,4 +1,5 @@
 import styles from "./First_page.modules.css";
+import Profile from "../../../public/images/New Project.png"
 const FirstPage = () => {
   return (
     <>
@@ -21,7 +22,7 @@ const FirstPage = () => {
           style={{ position: "relative", overflow: "hidden" }}
         >
           {/* WebkitClipPath:'url(#shape)' */}
-          <img className="blob" src="public/images/New Project.png" />
+          <img className="blob" src={Profile} />
 
           {/* <div className="blob-container"></div> */}
         </div>
