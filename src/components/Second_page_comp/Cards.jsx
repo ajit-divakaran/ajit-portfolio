@@ -4,7 +4,7 @@ function Cards() {
       <main
         className="card-body"
         style={{
-          width: "94vw",
+          width: "100vw",
           padding: "50px 0 50px 0",
           margin: "0 2.5vw 0 2.5vw,",
           display: "flex",

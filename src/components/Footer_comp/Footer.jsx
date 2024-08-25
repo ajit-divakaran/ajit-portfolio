@@ -14,6 +14,7 @@ const Footer = () => {
           {/* <p>Thank you for visiting my website.</p> */}
           <p style={{ marginTop: "2.5rem" }}>Feel free to connect with me.</p>
           <p>Gmail: ajit.divakaranb@gmail.com</p>
+        </div>
           <div className="socials">
             {IconData.map((val, index) => {
               return (
@@ -23,9 +24,8 @@ const Footer = () => {
               );
             })}
           </div>
-        </div>
       </div>
-      <div className="footer-right">
+      {/* <div className="footer-right"> */}
         <div className="footer-card">
           <div className="footer-card-content">
             <form onSubmit={onClick}>
@@ -53,7 +53,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-      </div>
+      {/* </div> */}
       <div
         className="rigths"
         style={{
