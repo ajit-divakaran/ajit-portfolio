@@ -187,14 +187,14 @@
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url("../../../public/images/project_1.jpeg");
+  background-image: url("/images/project_1.jpeg");
   filter: brightness(50%);
 }
 .card:nth-child(2):before {
-  background-image: url("../../../public/images/dice-unsplash.jpg");
+  background-image: url("/images/dice-unsplash.jpg");
 }
 .card:nth-child(3):before {
-  background-image: url("https://w0.peakpx.com/wallpaper/530/287/HD-wallpaper-bitcoin-gold-coin-finance-background-cryptocurrency-bitcoin-sign-bitcoin-coin-electronic-money-bitcoin.jpg");
+  background-image: url("https://t4.ftcdn.net/jpg/04/88/73/73/360_F_488737356_syGID3wg9ph4LCMRTNSmNE9GjgJa7xWW.webp");
 }
 
 

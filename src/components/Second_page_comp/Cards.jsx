@@ -1,4 +1,7 @@
 function Cards() {
+  const navigateByUrl = (url)=>{
+    window.location.href=url;
+  }
   return (
     <>
       <main
@@ -22,7 +25,7 @@ function Cards() {
                 Built using python tkinter, OpenCV this project can apply 3
                 different filters to any image
               </p>
-              <button className="button-background-move" role="button">
+              <button className="button-background-move" role="button" onClick={()=>navigateByUrl('https://github.com/ajit-divakaran/image-processing-gui')}>
                 Know More
               </button>
             </div>
@@ -37,7 +40,7 @@ function Cards() {
                 A game developed using purely React, where player can score if
                 the dice number and selected number are the same.
               </p>
-              <button className="button-background-move" role="button">
+              <button className="button-background-move" role="button" onClick={()=>navigateByUrl('https://github.com/ajit-divakaran/DiceGame')}>
                 Know More
               </button>
             </div>
@@ -47,14 +50,15 @@ function Cards() {
             style={{ border: "none", justifySelf: "center", height: "100%" }}
           >
             <div className="content">
-              <h2 className="title">Crypto Fetch</h2>
+              <h2 className="title">AudioBird</h2>
               <p className="copy">
-                A real time website where user is able to see and analyze
+              A personal audiobook manager that enables users to upload and categorize audiobooks in MP3 format, creating playlists for easy access and playback on the go.
+                {/* A real time website where user is able to see and analyze
                 different cryptocurrency value and their exchange rates in real
-                time fetched with the help of an API.
+                time fetched with the help of an API. */}
               </p>
               {/* <button className="btn-card">Book Now</button> */}
-              <button className="button-background-move" role="button">
+              <button className="button-background-move" role="button" onClick={()=>navigateByUrl('https://github.com/ajit-divakaran/Audiobird-frontend')}>
                 Know More
               </button>
             </div>
