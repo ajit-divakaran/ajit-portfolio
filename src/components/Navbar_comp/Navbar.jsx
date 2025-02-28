@@ -27,7 +27,7 @@ const NavBar = () => {
 
 { showNav && <div className="menu-items">
         <div className="nav-menu-hamburger">
-            <a href="#">Homes</a>
+            <a href="#">Home</a>
             <a href="#projects">Projects</a>
             <a href="#skills">My Skills</a>
           </div>
