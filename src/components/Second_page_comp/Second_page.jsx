@@ -14,7 +14,7 @@ const SecondPage = ()=>{
 <div className="secondpg_text">
     <h1 className='secondpg_head'>My projects</h1>
 </div>
-<Cards></Cards>
+<Cards/>
 {/* <div className="illustrate1">
     <img src={Ill} alt="" />
 </div>
