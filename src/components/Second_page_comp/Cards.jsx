@@ -24,7 +24,7 @@ function Cards() {
               <h2 className="title">Nutrihealth</h2>
               <p className="copy">
               A personalized meal nutrition tracker app that lets you make  informed decisions on your nutrition               
-
+              
               </p>
               <button className="button-background-move" role="button" onClick={()=>navigateByUrl('https://github.com/ajit-divakaran/image-processing-gui')}>
                 Know More

@@ -89,7 +89,7 @@
   display: grid;
   /* grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 26vw; */
-  grid-template-columns: repeat(auto-fill,minmax(26rem,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
   gap: 25px;
   width: 90vw;
   /* height: fit-content; */
@@ -120,10 +120,10 @@
   /* width: 80%; */
   text-align: center;
   color: whitesmoke;
-  /* min-height: 28vw; */
+  /* border: 1px solid red; */
   height: 100%;
   align-self: center;
-  /* width: 26rem; */
+  width: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
     0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
     0 16px 16px rgba(0, 0, 0, 0.1);
@@ -188,13 +188,18 @@
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
+  background-image: url("/images/vecteezy_people-and-diet-nutrition-plan_ 1 (1).png");
+  filter: brightness(70%);
+
+}
+.card:nth-child(2):before {
   background-image: url("/images/project_1.jpeg");
   filter: brightness(50%);
 }
-.card:nth-child(2):before {
+.card:nth-child(3):before {
   background-image: url("/images/dice-unsplash.jpg");
 }
-.card:nth-child(3):before {
+.card:nth-child(4):before {
   background-image: url("https://t4.ftcdn.net/jpg/04/88/73/73/360_F_488737356_syGID3wg9ph4LCMRTNSmNE9GjgJa7xWW.webp");
 }
 
@@ -208,6 +213,7 @@
   width: 100%;
   height: 100%;
   padding: 1rem;
+
   transition: transform var(--d) var(--e);
   z-index: 1;
   color:#ffe4c4;
@@ -324,9 +330,9 @@
   .button-background-move {
     font-size: 14px;
   }
-  .card {
+  /* .card {
     width: 90%;
-  }
+  } */
 
   .secondpg_head {
     font-size: 7vw;
@@ -398,10 +404,10 @@
     grid-template-rows: repeat(auto-fill, 350px);
   } */
 
-  .card {
+  /* .card {
     width: 26rem;
     height: 100%;
-  }
+  } */
 
   /* .card:last-child {
     grid-column: 1/3;
