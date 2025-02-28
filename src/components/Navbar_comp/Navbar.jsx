@@ -1,6 +1,9 @@
 // import Nav from 'react-bootstrap/Nav';
+import { useState } from "react";
 import styles from "./NavBar.modules.css";
 const NavBar = () => {
+  const [showNav,setShowNav] = useState(false)
+  console.log(showNav)
   return (
     <>
       <div className="navBar" style={{ marginTrim: "17px", width: "100vw" }}>
@@ -16,7 +19,19 @@ const NavBar = () => {
           <a href="#projects">Projects</a>
           <a href="#skills">My Skills</a>
         </div>
+        <div className="hamburger-icon">
+        {/* style={{marginTop:"-8px",padding:"0"}} */}
+          <img src="/images/menu.png" onClick={()=>setShowNav(!showNav)} width='28px' />
+        </div>
       </div>
+
+{ showNav && <div className="menu-items">
+        <div className="nav-menu-hamburger">
+            <a href="#">Homes</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">My Skills</a>
+          </div>
+ </div>}
     </>
   );
 };
